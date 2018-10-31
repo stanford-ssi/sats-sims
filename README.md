@@ -1,5 +1,5 @@
 # sats-sims
-* for satellites simulation testing suite development *
+for satellites simulation testing suite development
 
 # main team documentation
 - https://drive.google.com/drive/folders/18LNYxPYIoXPCwLZfoZrrLFBBE_7bVSKW?usp=sharing
