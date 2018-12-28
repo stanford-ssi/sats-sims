@@ -14,3 +14,8 @@ void EE::TestSystem::update(timeUnit dt)
 	
 }
 
+void EE::TestSystem::debug()
+{
+	System::debug();
+}
+

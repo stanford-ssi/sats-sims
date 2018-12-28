@@ -1,10 +1,21 @@
 #include "Engine.h"
 #include <iostream>
 #include <algorithm>
-
-
+#include <stddef.h>
 
 using namespace EE;
+
+Engine* Engine::m_pInstance = NULL;
+
+Engine* Engine::Instance()
+{
+	if (!m_pInstance) {
+		// Ensures only 1 instance exists
+		m_pInstance = new Engine;
+	}
+
+	return m_pInstance;
+}
 
 Engine::Engine()
 {

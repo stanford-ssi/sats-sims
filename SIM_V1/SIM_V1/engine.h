@@ -20,7 +20,7 @@ namespace EE {
 	class Engine
 	{
 	public:
-		Engine();
+		static Engine* Instance();
 
 		void loadSpace(Space* space);
 
@@ -47,6 +47,13 @@ namespace EE {
 		void debugSystem(const cType& system);
 
 	private:
+		// Singleton Engine:
+		Engine();
+		Engine(Engine const&) {};
+		Engine& operator=(Engine const&) {};
+		static Engine* m_pInstance;
+
+
 		Space* currentSpace;
 		eId nextId;
 		timeUnit time;

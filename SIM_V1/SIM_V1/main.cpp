@@ -7,7 +7,7 @@ using namespace EE;
 int main()
 {
 	// Create engine and load a blank space
-	Engine* eng = new Engine();
+	auto eng = Engine::Instance();
 	Space* space = new Space();
 	eng->loadSpace(space);
 
