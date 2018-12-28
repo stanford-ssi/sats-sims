@@ -1,2 +1,11 @@
-﻿  System.cpp
-  SIM_V1.vcxproj -> D:\SSI\Tyson_Sim_V1\x64\Debug\SIM_V1.exe
+﻿  component.cpp
+  entity.cpp
+  engine.cpp
+  Space.cpp
+  System.cpp
+  TestComponent.cpp
+  TestSystem.cpp
+  main.cpp
+  Generating Code...
+  LINK : D:\SSI\sats-sims\SIM_V1\x64\Debug\SIM_V1.exe not found or not built by the last incremental link; performing full link
+  SIM_V1.vcxproj -> D:\SSI\sats-sims\SIM_V1\x64\Debug\SIM_V1.exe
