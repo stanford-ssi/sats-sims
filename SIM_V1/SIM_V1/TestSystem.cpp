@@ -1,5 +1,6 @@
 #include "TestSystem.h"
 #include <iostream>
+#include "TestComponent.h"
 
 EE::TestSystem::TestSystem()
 {
@@ -8,9 +9,11 @@ EE::TestSystem::TestSystem()
 
 void EE::TestSystem::update(timeUnit dt)
 {
-	//for (std::unordered_set<System*> comp : compDependency["TestSystem"]) {
-	//	comp->state += dt;
-	//}
+
+	for (auto& comp : compDependency["TestComponent"]) {
+		((TestComponent*)comp)->state += dt;
+		std::cout << "Current State: " << ((TestComponent*)comp)->state << "\n";
+	}
 	
 }
 

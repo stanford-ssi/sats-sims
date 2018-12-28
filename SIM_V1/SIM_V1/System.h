@@ -12,7 +12,7 @@ namespace EE {
 	public:
 		/*System(const sType& type);*/
 
-		virtual void debug() = 0;
+		virtual void debug();
 
 	protected:
 

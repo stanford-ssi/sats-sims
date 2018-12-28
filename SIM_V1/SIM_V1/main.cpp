@@ -16,7 +16,11 @@ int main()
 	eng->addSystem("TestSystem");
 	eng->addSysDependency("TestSystem", "TestComponent");
 
-	eng->debugEntity("Test1");
+	for (int i = 0; i < 10; ++i) {
+		eng->update(10);
+	}
+
+	/*eng->debugEntity("Test1");
 	eng->debugSpace();
 	eng->debugSystem("TestSystem");
 
@@ -32,7 +36,7 @@ int main()
 	eng->removeComponent("Test2", "TestComponent");
 	
 	eng->debugSpace();
-	eng->debugSystem("TestSystem");
+	eng->debugSystem("TestSystem");*/
 
 	return 0;
 }
